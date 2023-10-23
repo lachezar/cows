@@ -12,4 +12,5 @@ func TestPermutations(t *testing.T) {
 
 	assert.Equal(t, c[0], candidate{1, 0, 2, 3})
 	assert.Equal(t, c[len(c)-1], candidate{9, 8, 7, 6})
+	assert.Equal(t, len(c), cap(c))
 }

@@ -14,6 +14,7 @@ func main() {
 
 func gameLoop(input *bufio.Reader) {
 
+	// number of candidates: 10!/6! - 9!/6!
 	var candidates []candidate = make([]candidate, 0, ((10 - 1) * 9 * 8 * 7))
 	candidates = permutations(make([]uint8, 4), 3, candidates)
 	computersNumber := candidates[rand.Intn(len(candidates))]
